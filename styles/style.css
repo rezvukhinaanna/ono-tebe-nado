@@ -285,9 +285,9 @@
 }
 
 .about__logo-image {
+    position: relative;
     width: 148px;
     height: 114px; 
-    position: relative;
     top: 63px;
     left: 45px;
 }
