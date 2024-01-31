@@ -285,9 +285,9 @@
 }
 
 .about__logo-image {
+    display: flex;
     width: 148px;
-    height: 114px;
-    display: flex; 
+    height: 114px; 
     position: relative;
     top: 63px;
     left: 45px;
