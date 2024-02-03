@@ -70,6 +70,9 @@
     background-color: #000;
     opacity: 0.6;
     position: absolute;
+    top: auto;
+    left: auto;
+
   }
 
 .cover__title {
@@ -82,33 +85,40 @@
     text-transform: uppercase;
     position: relative;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 10px;
     padding-top: 165px;
     padding-left: 50px;
+    padding-right: 50px;
+}
+ 
+.aligned-text {
+    align-self: center;
+    display: block;
+    letter-spacing: 30px;
 }
 
-.aligned-text {
-    text-align: center;
-    display: block;
-}
 .aligned-text_left {
-    text-align: left;
-    
+    align-self: start;
 }
 
 .aligned-text_center {
-    text-align: center;
-    width: 93%;
+    align-self: center;
+    letter-spacing: 30px;
 }
 
 .aligned-text_right {
-    text-align: right;
-    width: 98%;
+    letter-spacing: 5px;
+    align-self: end;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 0.6em;
+    letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
 }
 
 .cover__description {
@@ -142,7 +152,8 @@
     border: 1px solid currentColor;
     background-color: transparent;
     word-spacing: 0rem;
-    position: absolute;
+    position: relative;
+    z-index: 1;
     margin: 120px 0px 0px 795px;
     padding: 11px 32px;
 }
@@ -180,23 +191,21 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    display: grid;
 }
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    display: grid;
     grid-template-rows: 65.5% 34.5%;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    display: grid;
     grid-template-rows: 27.3% 80%;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    display: grid;
     grid-template-rows: 44.5% 65%;
 }
 
@@ -272,7 +281,7 @@
 
 .title__text {
     display: grid;
-    grid-template-rows: 41% 79%;
+    gap: 50px;
 }
 
 .about__title {
@@ -298,7 +307,7 @@
     padding-top: 45px;
     padding-left: 10px;
     display: grid;
-    grid-template-rows: 44% 56%;
+    gap: 25px;
 }
 /*footer*/
 .footer {
